@@ -1,14 +1,15 @@
 # Miguel Palanca
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/miguelpalanca)
-[![Email](https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:YOUR_EMAIL_HERE)
+[![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Smiggus)
+[![Email](https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:contactme@miguelpalanca.com)
 [![Meridian Engine](https://img.shields.io/badge/Live_Engine-0066CC?style=for-the-badge&logo=googlechrome&logoColor=white)](https://dash.mpholdings.co/Meridian)
 
 ## Applied Finance + Data Science | Systematic Equity Research
 
 > Building factor research that ships, not just backtests.
 
-I work at the intersection of wholesale banking and systematic equity research. **MSc Applied Finance** (Singapore Management University) and **MSc Business Analytics & Data Science** (in progress). Previously Strategic Equity Transactions at ING Singapore (equity-linked financing, total return swaps, margin loans, XVA/CVA pricing), with prior roles at Natixis Investment Managers, Arrowstreet Capital, and Chinabank Capital.
+I work at the intersection of wholesale banking and systematic equity research. **MSc Applied Finance** (Singapore Management University) and **MSc Business Analytics & Data Science** (IE University, Madrid - in progress). Previously Strategic Equity Transactions at ING Singapore (equity-linked financing, total return swaps, margin loans, XVA/CVA pricing), with prior roles at Natixis Investment Managers, Arrowstreet Capital, and Chinabank Capital.
 
 This profile is a curated showcase. In-progress work lives on a self-hosted GitLab; what's published here has been polished and stress-tested.
 
@@ -66,14 +67,6 @@ This profile is a curated showcase. In-progress work lives on a self-hosted GitL
 - Expanding the Meridian factor library [SPECIFIC_DIRECTION_NEEDED]
 - Migrating the research stack from Docker Compose to Kubernetes
 - Reading: [READING_LIST_NEEDED - papers/books you'd actually defend in an interview]
-
----
-
-## Connect
-
-- **LinkedIn:** [in/miguelpalanca](https://www.linkedin.com/in/miguelpalanca)
-- **Email:** [YOUR_EMAIL_HERE]
-- **Live engine:** [dash.mpholdings.co/Meridian](https://dash.mpholdings.co/Meridian)
 
 ---
 
