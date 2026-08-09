@@ -64,10 +64,8 @@ This profile is a curated showcase. In-progress work lives on a self-hosted GitL
 
 ## What I'm Working On
 
-- Expanding the Meridian factor library [SPECIFIC_DIRECTION_NEEDED]
+- Expanding the Meridian factor library and data pipeline
 - Migrating the research stack from Docker Compose to Kubernetes
-- Reading: [READING_LIST_NEEDED - papers/books you'd actually defend in an interview]
+- Reading: 
 
 ---
-
-*Research, ship, validate.*
