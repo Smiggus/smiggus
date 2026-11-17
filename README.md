@@ -1,71 +1,69 @@
 # Miguel Palanca
 
+[![Website](https://img.shields.io/badge/miguelpalanca.com-0B1F3A?style=for-the-badge&logo=googlechrome&logoColor=white)](https://miguelpalanca.com)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/miguelpalanca)
-[![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Smiggus)
+[![Meridian](https://img.shields.io/badge/Meridian_dashboard-0066CC?style=for-the-badge&logo=googlechrome&logoColor=white)](https://dash.mpholdings.co/Meridian)
 [![Email](https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:contactme@miguelpalanca.com)
-[![Meridian Engine](https://img.shields.io/badge/Live_Engine-0066CC?style=for-the-badge&logo=googlechrome&logoColor=white)](https://dash.mpholdings.co/Meridian)
 
-## Applied Finance + Data Science | Systematic Equity Research
+## Finance and technology
 
-> Building factor research that ships, not just backtests.
+I work where markets and engineering meet, and my two degrees cover both sides:
 
-I work at the intersection of wholesale banking and systematic equity research. **MSc Applied Finance** (Singapore Management University) and **MSc Business Analytics & Data Science** (IE University, Madrid - in progress). Previously Strategic Equity Transactions at ING Singapore (equity-linked financing, total return swaps, margin loans, XVA/CVA pricing), with prior roles at Natixis Investment Managers, Arrowstreet Capital, and Chinabank Capital.
+- **MSc Applied Finance**, Singapore Management University
+- **Master in Business Analytics and Data Science: Advanced AI**, IE University, Madrid (Advanced Tech Track, finishing 2027)
 
-This profile is a curated showcase. In-progress work lives on a self-hosted GitLab; what's published here has been polished and stress-tested.
+Finance: I interned on ING's Strategic Equity Transactions desk in Singapore, working on total return swap and margin loan deals, pricing swaps with the traders and writing credit packs. Before that I worked at Natixis Investment Managers, Brown Brothers Harriman and Arrowstreet Capital in Boston, and Chinabank Capital in Manila.
 
----
-
-## Featured Projects
-
-### Quant Research
-
-- **[Meridian_QuantConnect](https://github.com/Smiggus/Meridian_QuantConnect)** - QuantConnect implementation of a strategy from the **Meridian factor engine**, a multi-factor systematic equity scoring system. The engine runs at [dash.mpholdings.co/Meridian](https://dash.mpholdings.co/Meridian); core source is private.
-- **[LEAN_External_DataVendors](https://github.com/Smiggus/LEAN_External_DataVendors)** - Integration layer between QuantConnect/LEAN and external data providers. Data engineering for systematic research workflows.
-- **[OptionsAnalyzer](https://github.com/Smiggus/OptionsAnalyzer)** - [ONE_LINE_DESCRIPTION_NEEDED]
-- **[PairsTrading](https://github.com/Smiggus/PairsTrading)** - Pairs trading backtester. Built on quantitative trading strategies coursework at SMU (Benjamin Ee).
-
-### Infrastructure
-
-- **[quant-research-infra](https://github.com/Smiggus/quant-research-infra)** - *(planned)* Self-hosted research stack. Docker-based services for backtesting, data pipelines, and dashboards. Currently migrating to Kubernetes.
+Technology: I have run Linux servers since 2017 and written Python trading code on QuantConnect since 2020. That turned into a systematic equities platform I run on my own Kubernetes clusters.
 
 ---
 
-## Academic & Coursework
+## The platform
 
-- **[XGBoost-Equity-Returns](https://github.com/Smiggus/XGBoost)** - *(rename pending)* [SHORT_DESCRIPTION_NEEDED]
-- **[EMA-Crossover-PutHedge](https://github.com/Smiggus/200-to-50-EMA-Cross-Over-V4-PutHedge)** - *(rename pending)* 200/50 EMA crossover strategy with put-hedged downside protection.
+Vendor data comes in at one end and broker orders go out at the other. The public repos are cut-down copies of private codebases: the code, without the data, the book or the strategies.
 
----
+| Project | What it does | Stack |
+| --- | --- | --- |
+| [Lean Data Platform](https://github.com/Smiggus/lean-data-platform) | Point-in-time market data: vendor ingestion, fundamentals keyed on filing date, split- and dividend-adjusted returns, a survivorship-free universe, a quarantine gate and about 80 data-quality checks. Publishes to Parquet and Iceberg. | Dagster, PostgreSQL / TimescaleDB, Iceberg, k3s |
+| [Meridian](https://github.com/Smiggus/meridian-factor-platform) | Daily factor scores for US equities, served over a read-only API. Uses statistical and ML models, including a factor risk model (market, 10 sectors, 7 styles) that blends EWMA with per-stock GARCH(1,1) specific variance. | Python, FastAPI, Dagster, DuckDB |
+| [Argus](https://github.com/Smiggus/argus-execution) | Turns strategy targets into orders: nets sleeves into one book, applies risk limits last, sends orders through safety checks and reconciles fills with the broker. Runs on a paper account. | Python, PostgreSQL, Interactive Brokers, LEAN |
+| PortDash (private) | Dashboard for the platform: NAV, factor scores, backtests and risk. | React, TypeScript, FastAPI |
+| Cluster (private) | Started as one Ubuntu box, now k3s clusters on my own hardware, deployed from a self-hosted GitLab. | Proxmox, k3s, ArgoCD, GitLab CI |
 
-## Tech Stack
-
-**Languages**
-
-![Python](https://img.shields.io/badge/-Python-3776AB?style=flat-square&logo=python&logoColor=white)
-![SQL](https://img.shields.io/badge/-SQL-4479A1?style=flat-square&logo=postgresql&logoColor=white)
-![Jupyter](https://img.shields.io/badge/-Jupyter-F37626?style=flat-square&logo=jupyter&logoColor=white)
-
-**Quant & Data Science**
-
-![pandas](https://img.shields.io/badge/-pandas-150458?style=flat-square&logo=pandas&logoColor=white)
-![NumPy](https://img.shields.io/badge/-NumPy-013243?style=flat-square&logo=numpy&logoColor=white)
-![scikit-learn](https://img.shields.io/badge/-scikit--learn-F7931E?style=flat-square&logo=scikit-learn&logoColor=white)
-![XGBoost](https://img.shields.io/badge/-XGBoost-EB5E28?style=flat-square)
-![QuantConnect](https://img.shields.io/badge/-QuantConnect-00B5FF?style=flat-square)
-
-**Data & Infrastructure**
-
-![PostgreSQL](https://img.shields.io/badge/-PostgreSQL-4169E1?style=flat-square&logo=postgresql&logoColor=white)
-![Docker](https://img.shields.io/badge/-Docker-2496ED?style=flat-square&logo=docker&logoColor=white)
-![Linux](https://img.shields.io/badge/-Linux-FCC624?style=flat-square&logo=linux&logoColor=black)
-![Git](https://img.shields.io/badge/-Git-F05032?style=flat-square&logo=git&logoColor=white)
+More detail on [miguelpalanca.com/projects](https://miguelpalanca.com/projects/).
 
 ---
 
-## What I'm Working On
+## IE projects
 
-- Expanding the Meridian factor library and data pipeline
-- Migrating the research stack from Docker Compose to Kubernetes
-- Reading: 
+- [Margin Loan Monitor](https://github.com/Smiggus/Margin-Loan-Monitor): started as my Modern Data Architectures II project, a NiFi, Kafka and Spark streaming pipeline that sized haircuts from volatility over an ADV-based exit period, floored at Basel minimums, and tracked six loans through an LTV ladder. Now extended to real share pledges from SEC filings, analysed as a graph in Spark GraphFrames (540 pledges, $251bn, 361 issuers, 47 lenders in 2024-2025 filings).
+- [Rebalancing MLOps](https://github.com/IE-MBDS-Group-2/2.6-ML-Ops) (group project): a classifier that decides each week whether to rebalance a five-ETF portfolio after costs. Releases are gated on drawdown, and tests run in GitHub Actions on every pull request. The model has not passed the gate yet.
+- [Margin Call Early Warning](https://github.com/Smiggus/margin-call-early-warning) (in progress): my own add-on to the MLOps course. Predicts the chance that each margin loan is called within five trading days, and only ships if it clears a recall and precision threshold on unseen data.
+- [Rider Weather App](https://github.com/IE-MBDS-Group-2/2.2_PDA_GA) (Advanced Tech Track, in progress): builds on our Python for Data Analytics weather app. Adding a rain radar and features for motorcycle trips in the city, packaged in Docker with Dagster and SQL Server, with releases versioned automatically by CI/CD.
 
 ---
+
+## In progress
+
+- **Stressed credit case and IC memo**: takes public filings and builds an Excel model (base, downside and stress cases, liquidity runway, covenant headroom, recovery by tranche) and an investment committee memo. Set up so that adding a company means a new config file. First company: Aston Martin Lagonda.
+- **Structured equity pricer**: preferred equity and PIK holdco notes in a sponsor-backed company, with MOIC and IRR across scenarios next to common equity and senior debt.
+- **Stressed-company screener**: Dagster and DuckDB pipeline on company filings that flags leverage, interest cover, maturity walls and going-concern notes. UK (Companies House) first, then EU filings.
+
+---
+
+## Earlier work
+
+- [Meridian_QuantConnect](https://github.com/Smiggus/Meridian_QuantConnect): a Meridian strategy on QuantConnect.
+- [LEAN_External_DataVendors](https://github.com/Smiggus/LEAN_External_DataVendors): connects QuantConnect LEAN to outside data vendors.
+- [PairsTrading](https://github.com/Smiggus/PairsTrading): pairs trading backtester from SMU coursework.
+- [OptionsAnalyzer](https://github.com/Smiggus/OptionsAnalyzer), [XGBoost](https://github.com/Smiggus/XGBoost), [EMA crossover with put hedge](https://github.com/Smiggus/200-to-50-EMA-Cross-Over-V4-PutHedge): early strategy and modelling work.
+
+---
+
+## Stack
+
+**Languages:** Python, SQL, TypeScript
+**Data and ML:** pandas, NumPy, scikit-learn, XGBoost, PyTorch, DuckDB, Spark, Kafka, NiFi
+**Orchestration and storage:** Dagster, PostgreSQL / TimescaleDB, Iceberg, Parquet
+**Infrastructure:** Linux, Docker, Kubernetes (k3s), ArgoCD, GitLab CI, GitHub Actions, Proxmox
+**Markets:** QuantConnect LEAN, Interactive Brokers API, FastAPI
