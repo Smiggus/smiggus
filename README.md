@@ -12,7 +12,7 @@ I work where markets and engineering meet, and my two degrees cover both sides:
 - **MSc Applied Finance**, Singapore Management University
 - **Master in Business Analytics and Data Science: Advanced AI**, IE University, Madrid (Advanced Tech Track, finishing 2027)
 
-Finance: I interned on ING's Strategic Equity Transactions desk in Singapore, working on total return swap and margin loan deals, pricing swaps with the traders and writing credit packs with the coverage and Risk Management teams. Before that I worked at Natixis Investment Managers, Brown Brothers Harriman and Arrowstreet Capital in Boston, and Chinabank Capital in Manila.
+Finance: I interned on ING's Strategic Equity Transactions desk in Singapore, working on total return swap and margin loan deals, pricing swaps with the traders and writing credit packs with the coverage and risk teams. Before that I worked at Natixis Investment Managers, Brown Brothers Harriman and Arrowstreet Capital in Boston, and Chinabank Capital in Manila.
 
 Technology: I have run Linux servers since 2017 and written Python trading code on QuantConnect since 2020. That turned into a systematic equities platform I run on my own Kubernetes clusters.
 
